@@ -1,8 +1,7 @@
-import friends from "../../friends.json";
 import styles from "./FriendList.module.css";
 import FriendListItem from "./FriendListItem.jsx";
 
-export default function FriendList() {
+export default function FriendList({ friends }) {
   return (
     <ul className={styles.friends}>
       {friends.map(({ id, name, avatar, isOnline }) => (
